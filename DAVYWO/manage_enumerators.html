@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Enumerators</title>
+    <link rel="stylesheet" href="admin_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Enumerators</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Add New Enumerator</h2>
+            <form id="addEnumeratorForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="location">Assigned Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <button type="submit">Add Enumerator</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Existing Enumerators</h2>
+            <!-- This table would dynamically populate with enumerator data -->
+            <table>
+                <tr>
+                    <th>Username</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>enumerator_john</td>
+                    <td>Location 1</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Deactivate</button>
+                    </td>
+                </tr>
+                <!-- More rows as needed -->
+            </table>
+        </section>
+    </main>
+</body>
+</html>
